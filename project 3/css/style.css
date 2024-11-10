@@ -1,0 +1,111 @@
+body { 
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  max-width: 960px;
+  margin: 30px auto; 
+  
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 20px;  
+  grid-template-areas:
+  "header header"
+  "main main"
+  "footer footer"  
+}
+h1,
+h2
+h3,
+h4 { 
+  margin: 0;
+}
+
+header{
+  grid-area: header;
+  width: 1040px;
+  padding: 20px;
+  background-color: rgba(255,236,98);
+
+}
+
+main {
+  grid-area: main;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 20px;
+  width: 960px;
+  grid-template-areas:
+  "introduction introduction"
+  "government government"
+  "flag anthem"
+  "divisions diplomatic"
+  "geography geography"
+  "location location"
+  "area climate"
+  "footer footer";
+}
+
+#introduction {
+  grid-area: introduction;
+  padding: 20px;
+  background-color: rgba(255,236,98);
+}
+
+#government {  
+  background-color: rgb(177, 213, 255);
+  grid-area: government;
+  padding: 20px;
+}
+
+#flag {  
+  grid-area: flag;
+  background-color: rgb(177, 213, 255);
+  padding: 20px;
+}
+
+#anthem {
+  grid-area: anthem;
+  background-color: rgb(177, 213, 255);
+  padding: 20px;
+  padding-top: 75px;
+}
+
+#divisions {
+  grid-area: divisions;
+  background-color: rgb(177, 213, 255);
+  padding: 20px;
+}
+
+#diplomatic { 
+  grid-area: diplomatic;
+  background-color: rgb(177, 213, 255);
+  padding: 20px;
+}
+
+#geography { 
+  grid-area: geography;
+  background-color: rgb(255, 145, 145);
+  padding: 20px;
+}
+
+#location {
+  grid-area: location;
+  background-color: rgb(255, 145, 145);
+  padding: 20px;
+}
+
+#area {
+  grid-area: area;
+  background-color: rgb(255, 145, 145);
+  padding: 20px;
+}
+
+#climate {
+  grid-area: climate;
+  background-color: rgb(255, 145, 145);
+  padding: 20px;
+}
+
+#footer { 
+  grid-area: footer;
+  padding: 20px;
+}
