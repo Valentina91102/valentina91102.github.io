@@ -1,0 +1,106 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+  "header nav"
+  "main main"
+  "footer footer";
+}
+
+header,
+nav, 
+section, 
+footer{ 
+  background-color: rgb(173, 224, 250)		;
+  border: 1px solid #222;
+}
+
+header{ 
+  grid-area: header;
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+nav{
+  grid-area: nav;
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+main {
+  grid-area: main;
+  display:grid;
+  grid-template-columns:  1fr 1fr;
+  grid-gap: 15px;
+}
+
+
+#introduction {
+  grid-column: 1/2;
+  padding: 50px;
+  background-color:rgb(173, 224, 250);
+}
+#headshot { 
+  grid-column: 2/3;
+  padding: 50px;
+  background-color:rgb(173, 224, 250)
+}
+
+
+#background {
+  grid-column: 1/2;
+  padding: 50px;
+  background-color: rgb(173, 224, 250);
+  text-overflow: ellipsis; /* will make [...] at the end */
+}
+
+#aimages {
+  grid-column: 2/3;
+  padding: 20px;
+  text-wrap: wrap;
+  background-color: rgb(173, 224, 250);
+}
+
+
+#experiment {
+  grid-column: 1/2;
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+#vials {
+  grid-column: 2/3;
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+
+#methods {
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+
+#results {
+  grid-column: 1/2;
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+#summary {
+  grid-column: 2/3;
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+
+#presentation {
+  grid-column: 1/2;
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+
+#interns { 
+  grid-column: 2/3;
+  padding: 20px;
+  background-color: rgb(173, 224, 250);
+}
+footer{ 
+  grid-area: footer;
+}

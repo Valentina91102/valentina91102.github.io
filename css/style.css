@@ -29,25 +29,15 @@ header{
 
 main {
   grid-area: main;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-gap: 20px;
-  width: 960px;
-  grid-template-areas:
-  "introduction introduction"
-  "government government"
-  "flag anthem"
-  "divisions diplomatic"
-  "geography geography"
-  "location location"
-  "area climate"
-  "footer footer";
+  display:flex;
+  flex-direction: row;
 }
 
 #introduction {
   grid-area: introduction;
   padding: 20px;
   background-color: rgba(255,236,98);
+  -ms-flex-align: start;
 }
 
 #government {  
