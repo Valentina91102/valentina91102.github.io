@@ -93,7 +93,7 @@ main {
 }
 
 #presentation {
-  grid-column: 2/3;
+  grid-column: 1/2;
   padding: 20px;
   background-color: rgb(173, 224, 250);
 }
