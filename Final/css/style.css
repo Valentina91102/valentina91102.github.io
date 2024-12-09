@@ -2,6 +2,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
+  background-color: rgb(173, 224, 250);
+  
   grid-template-areas:
   "header nav"
   "main main"
@@ -12,19 +14,18 @@ header,
 nav, 
 section, 
 footer{ 
-  background-color: rgb(173, 224, 250)		;
-  border: 1px solid #222;
+  background-color: rgb(173, 224, 250);
+  /* border: 1px solid #000d71; */
+  ;
 }
 
 header{ 
   grid-area: header;
-  grid-gap: 15px;
   padding: 20px;
 }
 
 nav{
   grid-area: nav;
-  grid-gap: 15px;
   padding: 20px;
 }
 
@@ -58,7 +59,7 @@ main {
 #aimages {
   grid-column: 2/3;
   padding: 20px;
-  text-wrap: wrap;
+  overflow-wrap: break-word;
   background-color: rgb(173, 224, 250);
 }
 
@@ -84,14 +85,15 @@ main {
   padding: 20px;
   background-color: rgb(173, 224, 250);
 }
+
 #summary {
-  grid-column: 2/3;
+  grid-column: 1/2;
   padding: 20px;
   background-color: rgb(173, 224, 250);
 }
 
 #presentation {
-  grid-column: 1/2;
+  grid-column: 2/3;
   padding: 20px;
   background-color: rgb(173, 224, 250);
 }
@@ -101,6 +103,8 @@ main {
   padding: 20px;
   background-color: rgb(173, 224, 250);
 }
+
+
 footer{ 
   grid-area: footer;
 }
